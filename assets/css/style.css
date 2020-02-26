@@ -1,14 +1,10 @@
-
-
-
 /*-------------------------------------------------
       [ ## Header ]
 */
 .site-header {
-  position: absolute;
   width: 100%;
   z-index: 99;
-  top: 15px;
+  top: 0px;
   transition: all 0.3s;
 }
 @media only screen and (max-width: 1199px) {
@@ -231,7 +227,7 @@ a:active {
   -webkit-transform-origin: 0 0 0;
   transform-origin: 0 0 0;
   opacity: 0;
-  z-index: 5;
+  z-index: 9999;
 }
 .menu > ul > li > ul.dropdown-content:before {
   border-color: transparent transparent #222;
@@ -628,4 +624,3 @@ ul.dropdown-content
     padding-top: 20px;
   }
 }
-
