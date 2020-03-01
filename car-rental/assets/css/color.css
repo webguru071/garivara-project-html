@@ -1,0 +1,93 @@
+
+:root {
+  --main-bg-color: #ff6654;
+  --dark-bg-color: #5f5f5f;
+  --text-light-color: #a1a1a1;
+  --text-dark-color: #2d2d2d;
+}
+
+/*text color*/
+
+a,
+h1,h2,h3,h4,h5,h6,
+.single-blog-post .post-content h3 a,
+.single-box  a:hover h4, a.text-link:hover,
+.widget-link-items li a:hover,
+.title-right-icon li:nth-child(1) i,
+.seat li:nth-child(1) i {
+	color: var(--text-dark-color);
+}
+
+.btn-dark,
+.btn-theme:hover,
+.btn-default:hover, .badge-text,
+.tab-content .nav a .badge{
+  background-color: var(--text-dark-color);
+}
+
+a:hover, a.text-link, a.btn-text-color:hover, .theme-text-color, .header-top .top-social-icon ul li a:hover,
+.header-top .top-address ul li a:hover, .btn-dark:hover,
+.site-navigation .main-menu li.nav-item a.nav-link:hover,
+.site-navigation .top-right-menu li.nav-item a.nav-link:hover,
+.btn-text-color:hover,
+.cta-btn .btn-border:hover,
+.single-service .overlay-content .inner-content .text-holder .title h3 a,
+.single-service .overlay-content .inner-content .icon,
+.about-text-box ul li:before,
+.icon-box i:before, .single-box a .box:before,
+.single-box .box-info li i,
+.single-box .box-info h4:hover,
+.footer-menu ul li a:hover,
+.single-blog-post .post-content .read-more-btn,
+.single-blog-post .post-content h3 a:hover,
+.footer-bottom-nav ul li a:hover,
+.footer-social-icon ul li a:hover,
+.cta-btn a.btn:hover, .single-service .overlay-content .inner-content .text-holder .title h3 a:hover,
+.widget-link-items li a,
+.left-sidebar .luggage ul li a:hover,
+.title-right-icon li:nth-child(2) i,
+.list-boxs .ratings li i,
+.seat li i,
+.paginations li a,
+.list-items li:before {
+	color: var(--main-bg-color);
+}
+
+/*background color*/
+.btn-color,
+.btn-border:hover,
+.btn-theme,
+.theme-bg-color,
+.main-slider .owl-theme .owl-dots .owl-dot.active,
+.single-service .img-holder .static-content .icon a,
+.section-title:after,
+.single-box a .box:before,
+.single-blog-post .post-content .read-more-btn:before,
+.single-service-box .card:before, .call-to-action, .top-right-menu .btn-menu:hover, .radius-slider,
+a.btn-theme, .paginations li a:hover,
+.single-box2:hover .box, .card-header{
+	background-color: var(--main-bg-color);
+}
+
+
+/*border color*/
+.btn-color, .btn-border:hover, .tab-content .nav a:hover{
+	border-color: var(--main-bg-color);
+}
+
+
+.single-service {
+    border-top: 5px solid var(--main-bg-color);
+}
+
+.single-service .overlay-content .inner-content .text-holder .title::before {
+    border: 2px solid var(--main-bg-color);
+}
+
+.footer-widget h4:before{
+	border: 1px solid var(--main-bg-color);
+}
+
+.single-service .img-holder .static-content .title::before {
+    border: 2px solid var(--main-bg-color);
+}

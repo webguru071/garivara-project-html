@@ -1,1 +1,118 @@
 
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+	/* ==============================================================================*/
+                              /*(Leasing page)*/
+	/* ==============================================================================*/
+	/* Promo Area css Start */
+	.promo-box-right {
+		padding: 48px 0;
+	}
+	/* ==============================================================================*/
+                              /*(About page)*/
+	/* ==============================================================================*/
+	/* About Video area */
+	.video-content {
+		margin-top: -395px;
+	}
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+	/* ==============================================================================*/
+                              /*(Leasing page)*/
+	/* ==============================================================================*/
+	/* Promo Area css Start */
+	.promo-box-right {
+		padding: 30px 0;
+	}
+	.promo-box-right h3 {
+		font-size: 28px;
+	}
+	/* ==============================================================================*/
+                              /*(About page)*/
+	/* ==============================================================================*/
+	/* About Video area */
+	.video-content {
+		margin-top: -326px;
+	}
+	.know-car {
+    	padding-bottom: 200px;
+	}
+	/* ==============================================================================*/
+                              /*(Leasing Details page)*/
+	/* ==============================================================================*/
+	/* img label */
+	.img-label {
+		font-size: 10px;
+		padding: 12px;
+		margin-top: 125px;
+		margin-left: 20px;
+		line-height: 0;
+	}
+}
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+	/* Global css */
+	h1{
+		font-size: 38px;
+	}
+	p{
+		font-size: 14px;
+	}
+	/* ==============================================================================*/
+                              /*(Leasing page)*/
+	/* ==============================================================================*/
+	/* Promo Area css Start */
+	.promo-box-left{
+		display: none;
+	}
+	.promo-box-right {
+		padding: 30px 0;
+		text-align: center;
+	}
+	/* Question and answer Area Start*/
+	.single-acc h5{
+		font-size: 16px;
+	}
+	/* ==============================================================================*/
+                              /*(About page)*/
+	/* ==============================================================================*/
+	/* About Video area */
+	.video-content {
+		margin-top: -273px;
+	}
+	.know-car {
+    	padding-bottom: 150px;
+	}
+
+	/* ==============================================================================*/
+                              /*(Leasing Details page)*/
+	/* ==============================================================================*/
+	/* img label */
+	.img-label {
+		margin-top: 100px;
+		margin-left: 23px;
+	}
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	/* Global css */
+	h1{
+		font-size: 28px;
+	}
+
+	/* ==============================================================================*/
+                              /*(About page)*/
+	/* ==============================================================================*/
+	/* About Video area */
+	.video-content {
+		margin-top: -283px;
+	}
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+
+	
+}
