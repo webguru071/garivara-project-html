@@ -260,7 +260,8 @@ input[type=password] {
 input[type=text]:focus,
 input[type=password]:focus, 
 select:focus {
-background-color: #fff4f2;
+  box-shadow: none;
+  outline: none;
 }
 
 /*Checkboxes styles*/
@@ -972,9 +973,6 @@ transform: scale(1.1);
   transition: all 500ms ease;
 }
 
-
-
-
 /* --- Servic Area Start-------*/
 
 /*service area*/
@@ -1457,7 +1455,7 @@ display: block;
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
-	background-color: #ec3323;
+	background-color: var(--main-bg-color);
 	border-radius: 50%;
 	color: #fff;
 	font-size: 14px;
@@ -1585,7 +1583,7 @@ display: block;
 }
 
 .agent-details a h3:hover {
-	color: #ec3323
+	color: var(--main-bg-color);
 }
 
 /*--Map Area--*/
@@ -1642,13 +1640,6 @@ color: var(--main-bg-color);
   color: var(--main-bg-color);
 }
 /* ----Customers Area Start----- */
-
-
-
-
-/* ----Customers Area End----- */
-
-
 .customer-img img{
   width: 100%;
 }
@@ -1701,8 +1692,6 @@ padding-left: 45px;
   z-index: -1;
   box-shadow: 0 0 30px 0 rgba(0,0,0,.3);
 }
-
-
 .box-shadow-customer:before{
   position: absolute;
   background: linear-gradient(-150deg, #ffffff, #ffffff);
@@ -1715,6 +1704,31 @@ padding-left: 45px;
   box-shadow: 0 0 30px 0 rgba(0,0,0,.3);
 }
 
+.customer-slider .owl-item .active .customers-details-wrapper  {
+  -webkit-animation: 1s 0.2s flipInX both;
+  animation: 1s 0.2s flipInX both;
+}
+
+.customer-slider .owl-item .active .customer-img .img-sa {
+  -webkit-animation: 1s 0.2s fadeInUp both;
+  animation: 1s 0.2s fadeInUp both;
+}
+
+
+.blog-area-slider-content .owl-item.active .blog-area-slider-item .title {
+  -webkit-animation: 1s 0.2s fadeInUp both;
+  animation: 1s 0.2s fadeInUp both;
+}
+
+.blog-area-slider-content
+  .owl-item.active
+  .blog-area-slider-item
+  .para-wrapper {
+  -webkit-animation: 1s 0.2s flipInX both;
+  animation: 1s 0.2s flipInX both;
+}
+
+/* ----Customers Area End----- */
 
 /* -----offer Area----- */
 .offer-ride{
@@ -1734,6 +1748,11 @@ width:25%;
 }
 .offer-img{
   position: relative;
+  background-image: url(../images/ke-img.png);
+  height: 100%;
+  background-position: left top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .offer-img:after {
   content: "";
@@ -1743,11 +1762,11 @@ width:25%;
   left: 0;
   top: 0;
   width: 100%;
-  height: 99%;
+  height: 100%;
 }
 .offer-details{
   background: var(--main-bg-color);
-  height: 99%;
+  height: 100%;
   padding: 100px 100px 80px 100px;
 }
 .offer-details ul li::before{
@@ -1757,6 +1776,7 @@ width:25%;
 }
 .btn-bg{
   box-shadow: 0px 0px 8px -3px #000;
+  background: #000;
 }
 .btn-bg:hover{
   box-shadow: none;
@@ -1943,14 +1963,60 @@ width:25%;
 }
 
 /* ----Call to Action Area Start---- */
+.call-to-action{
+  background-color: var(--main-bg-color);
+}
+.call-text{
+  position: relative;
+}
+.call-text:before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: white;
+  right: -20%;
+}
+.call-text i:before {
+  font-size: 35px;
+}
+.call-icon{
+  padding-right: 20px;
+}
+.news-input .form-control{
+  background: transparent;
+  border-radius: 50PX;
+  height: 50px;
+}
 
+.news-input  input::-webkit-input-placeholder { /* Edge */
+  color: #fff;
+}
+
+.news-input  input =:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+.news-input  input::placeholder {
+  color: #fff;
+}
+.news-input {height: 100%;
+    align-items: center;
+    display: flex;}
+.btn-news{
+  line-height: 49px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 25px;
+  background: black;
+    border-color: #000;
+}
+.btn-news:hover{
+  color: #fff;
+  background: transparent;
+  border-color: #fff;
+}
 /* ----Call to Action Area End---- */
-
-
-
-
-
-
 
 /* --Footer Area-- */
 .site-footer {

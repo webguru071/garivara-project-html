@@ -24,10 +24,7 @@
       type="image/x-icon"
     />
     <!-- icofont -->
-    <link
-      rel="stylesheet"
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- icon font icofont  -->
     <link rel="stylesheet" href="assets/vendor/icofont/icofont.min.css" />
     <!-- icon font fontawesome  -->
@@ -35,6 +32,9 @@
 
     <!-- Flate font icofont  -->
     <link rel="stylesheet" href="assets/font/flaticon.css" />
+
+    <!-- animate.css  -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
 
     <link rel="stylesheet" href="assets/css/meanmenu.min.css" />
     <!-- google font -->
@@ -48,7 +48,7 @@
     <link href="assets/css/color.css" rel="stylesheet" />
     <!-- theme custom style-->
     <link href="assets/css/custom.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/menu.css" rel="stylesheet" />
     <!-- responsive-->
     <link href="assets/css/responsive.css" rel="stylesheet" />
   </head>
@@ -164,7 +164,7 @@
         </div>
       </div>
       <!-- Logo & Navigation -->
-      <div class="site-navigation style-one">
+      <div class="site-navigation header-style-one">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12">
@@ -258,7 +258,7 @@
               <!--~~~~~~~ Start Mobile Menu ~~~~~~~~-->
               <div class="mobile-menu">
                 <a class="mobile-logo" href="index.html">
-                  <img src="assets/images/logo/logo.png" alt="logo" />
+                  <img src="assets/images/logo.png" alt="logo" />
                 </a>
               </div>
               <!--~~./ end mobile menu ~~-->
@@ -1192,7 +1192,11 @@
                 <div class="row customars-height">
                   <div class="col-lg-3">
                     <div class="customer-img">
-                      <img src="assets/images/team/2.png" alt="" />
+                      <img
+                        src="assets/images/team/2.png"
+                        alt=""
+                        class="img-ss"
+                      />
                     </div>
                   </div>
                   <div class="col-lg-9">
@@ -1238,14 +1242,14 @@
 
       <!--Offer Ride Area Start -->
       <section class="pb100 offer-ride">
-        <div class="container-fluid nopadding">
-          <div class="row">
-            <div class="col-lg-6 nopadding">
+        <div class="container-fluid pl-0">
+          <div class="row  no-gutters">
+            <div class="col-lg-6">
               <div class="offer-img">
-                <img src="assets/images/ke-img.png" alt="img" />
+                <!-- <img src="assets/images/ke-img.png" alt="img" /> -->
               </div>
             </div>
-            <div class="col-lg-6 nopadding">
+            <div class="col-lg-6 ">
               <div class="offer-details">
                 <h2 class="white">Offer Ride</h2>
                 <p class="white pt50">
@@ -1713,15 +1717,44 @@
       <!--Logo Area End -->
 
       <!-- Call To Action Start -->
-      <section class="py50">
+      <section class="py50 call-to-action">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
-              <div class="call-arae">
-                <div class="call-text"></div>
+            <div class="col-lg-7">
+              <div
+                class="call-arae d-flex justify-content-between align-items-center"
+              >
+                <div class="call-text d-flex">
+                  <div class="call-icon">
+                    <i class="flaticon-call white"></i>
+                  </div>
+                  <div class="call-number">
+                    <p class="white">Call Us</p>
+                    <h3 class="white">+1 8903 3847 7654</h3>
+                  </div>
+                </div>
+                <div class="news-letter">
+                  <h2 class="white">NEWSLETTER</h2>
+                </div>
               </div>
             </div>
-            <div class="col-lg-6"></div>
+            <div class="col-lg-5">
+              <div class="news-input">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Email Address"
+                    required
+                  />
+                  <span class="input-group-btn">
+                    <button class="btn btn-color btn-news" type="button">
+                      Subscribe
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1877,7 +1910,7 @@
     <!-- popper -->
     <script src="assets/js/popper.min.js"></script>
     <!-- bootstrap -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <!-- owl -->
     <script src="assets/vendor/owl/js/owl.js"></script>
     <script src="assets/js/meanmenu.min.js"></script>
@@ -1885,7 +1918,7 @@
     <!-- wave carousel -->
     <script src="assets/vendor/wave/js/wave.js"></script>
     <!-- custom -->
-    <script src="assets/js/custom.js"></script>
+    <!-- <script src="assets/js/custom.js"></script> -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
