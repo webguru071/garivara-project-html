@@ -177,7 +177,7 @@ section {
 .section-title{
   position: relative;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 .section-title:after{
   content: "";
@@ -1192,6 +1192,12 @@ transform: scale(1.1);
 /*About Us*/
 .section-heading-box > .section-title:after {
  margin: 10px auto 0 auto;
+}
+.about-text-box .section-title{
+  margin-bottom: 30px;
+}
+.single-about-box .section-title{
+  margin-bottom: 30px;
 }
 .about-text-box ul li{
   font-weight: 500;
@@ -2312,18 +2318,10 @@ padding-bottom: 330px;
 font-weight: 600;
 }
 .font-bell {
-color: #ff6654;
-font-size: 18px;
-line-height: 28px;
-}
-
-.single-about-box i{
-width: 8%;
-float: left;
-}
-.single-about-box span{
-width: 92%;
-float: left;
+  color: var(--main-bg-color);
+  font-size: 18px;
+  line-height: 28px;
+  padding-right: 10px;
 }
 /* accordion */
 
@@ -2382,22 +2380,25 @@ float: left;
   padding: 1.25rem;
   box-shadow: 0 9px 6px 2px #f5f5f5;
   text-align: left;
+  position: relative;
 }
 .single-dream-car .card-text {
-  padding-bottom: 7px;
+  padding-bottom: 15px;
 }
 .single-dream-car .price {
-  color: white;
+  color: #fff;
   background-color: #ff6654;
   text-align: center;
   border-radius: 4px;
-  float: right;
-  margin-top: -35px;
   padding: 2px 12px;
+  width: 80px;
+  position: absolute;
+  top: -17px;
+  right: 20px;
 }
 .single-dream-car .card-title {
   font-weight: 600;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 /* ========Dreams car  area style end==========*/
 
@@ -2427,7 +2428,7 @@ float: left;
 
 .promo-box-left::after {
   position: absolute;
-  background: #ec3323 none repeat scroll 0 0;
+  background: var(--main-bg-color) none repeat scroll 0 0;
   content: "";
   top: 0;
   right: 55%;
@@ -2469,60 +2470,16 @@ float: left;
   line-height: 50px;
 }
 
-/* Promo Button */
-.promo-btn {
-  color: #fff;
-  background: transparent;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #ec3323;
-  position: relative;
-  margin: 1em;
-  display: inline-block;
-  padding: 8px 15px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  text-align: center;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.promo-btn:hover::before,
-.promo-btn:hover::after {
-  width: calc(100% + 12px);
-  height: calc(100% + 12px);
-  border-color: #ec3323;
-}
-.promo-btn::after {
-  bottom: -6px;
-  right: -6px;
-  border-width: 0 2px 2px 0;
-}
-.promo-btn::after {
-  bottom: -6px;
-  right: -6px;
-  border-width: 0 2px 2px 0;
-}
-
-.promo-btn::before,
-.promo-btn::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-color: #ec3323;
-  box-sizing: border-box;
-  border-style: solid;
-  width: 1em;
-  height: 1em;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
 
 .promo-btn::before {
   top: -6px;
   left: -6px;
   border-width: 2px 0 0 2px;
   z-index: 5;
+}
+.btn-common{
+  padding: 6px 25px;
+  line-height: 2;
 }
 /* Promo Area css end */
 
@@ -2711,4 +2668,64 @@ input[type="password"] {
 .single-rule h5{
   font-weight: 600;;
 }
-/* <!--  =========rules page end========= -->*/
+   /* <!--  =========Downloads page start ========= -->*/
+
+.download{
+  background: #fff4f2;
+}
+.list-view1 li{
+  padding-bottom: 10px;
+}
+
+.list-view1 li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 10px;
+    color:#ff6654;}
+    .downlods-area a {
+      width:40%;
+    }
+    .downlods-area img{
+      width: 100%;
+          padding-right: 30px;
+    
+    }
+    .mobile-img img{
+      width: 100%
+    }
+    .app-download{
+      height: 100%;
+        padding-top: 60px;
+    }
+
+
+
+
+
+
+
+    .btn-width{
+      width: 100%;
+    }
+    .btn-transparent{
+      margin: 0;
+    }
+    .btn-transparent:hover{
+      background-color: #000 !important;
+    }
+
+
+
+
+
+    /* <!--  =========rules page start ========= -->*/
+.single-rule h5{
+  font-weight: 600;;
+}
+.single-rule p{
+  padding-top: 8px;
+}
+.single-rule ul li{
+  padding-bottom: 8px; 
+}
