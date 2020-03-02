@@ -2155,17 +2155,18 @@ width: 25%;
 
 /* About Video Area css start (About page)*/
 
+/* About Video Area css start (About page)*/
+
 #about-video {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../images/about-video-bg.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/about-video-bg.jpg');
 }
 
 .video-content {
-  position: relative;
-  margin-top: -450px;
+position: relative;
+margin-top: -450px;
 }
-.know-car {
-  padding-bottom: 330px;
+.know-car{
+padding-bottom: 330px;
 }
 .video-content img {
   border: 5px solid #fff;
@@ -2187,6 +2188,7 @@ width: 25%;
   -ms-flex-align: center;
   align-items: center;
 }
+
 
 /* video play Button */
 
@@ -2216,6 +2218,7 @@ width: 25%;
   height: 90px;
 }
 
+
 /* video play Button before */
 
 .video-play-btn::before {
@@ -2236,6 +2239,7 @@ width: 25%;
   animation: pulse-border 1500ms ease-out infinite;
   z-index: -1;
 }
+
 
 /* video play box */
 
@@ -2274,6 +2278,7 @@ width: 25%;
   width: 100%;
 }
 
+
 /* video close button */
 
 .video-close {
@@ -2303,22 +2308,22 @@ width: 25%;
   border: 5px solid #fff;
 }
 
-.single-about-box h5 {
-  font-weight: 600;
+.single-about-box h5{
+font-weight: 600;
 }
 .font-bell {
-  color: #ff6654;
-  font-size: 18px;
-  line-height: 28px;
+color: #ff6654;
+font-size: 18px;
+line-height: 28px;
 }
 
-.single-about-box i {
-  width: 8%;
-  float: left;
+.single-about-box i{
+width: 8%;
+float: left;
 }
-.single-about-box span {
-  width: 92%;
-  float: left;
+.single-about-box span{
+width: 92%;
+float: left;
 }
 /* accordion */
 
@@ -2334,8 +2339,8 @@ width: 25%;
   transition: 0.8s;
 }
 
-.accordion .accordion:after {
-  content: "\002B";
+#about-video .accordion:after {
+  content: '\002B';
   color: #fff;
   font-weight: bold;
   float: right;
@@ -2343,7 +2348,7 @@ width: 25%;
   transition: content 0.3s ease-out;
 }
 
-.accordion .active:after {
+#about-video .active:after {
   content: "\2212";
   transition: content 0.3s ease-out;
 }
@@ -2363,7 +2368,6 @@ width: 25%;
   background: transparent;
   color: #fff;
 }
-
 /* About Video Area css end (About page)*/
 
 /* ==============================================================================*/
@@ -2703,4 +2707,8 @@ input[type="password"] {
 
 
 
-
+/* <!--  =========rules page start ========= -->*/
+.single-rule h5{
+  font-weight: 600;;
+}
+/* <!--  =========rules page end========= -->*/
