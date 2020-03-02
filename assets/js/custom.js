@@ -49,7 +49,7 @@ $(".agent-items-wrapper").owlCarousel({
       items: 1
     },
     576: {
-      items: 3
+      items: 2
     },
     1920: {
       items: 4
