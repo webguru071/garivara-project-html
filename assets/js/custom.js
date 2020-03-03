@@ -220,3 +220,59 @@ $(document).ready(function() {
     $("#nav-toggle").toggle();
   });
 });
+
+//Ride Sharing Banner Slider
+if ($(".ride-slider-carousel").length) {
+  $(".ride-slider-carousel").owlCarousel({
+    animateOut: "fadeOut",
+    animateIn: "fadeIn",
+    loop: true,
+    margin: 0,
+    nav: true,
+    dots: false,
+    singleItem: true,
+    smartSpeed: 500,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    navText: [
+      "<i class='fas fa-arrow-circle-left'></i>",
+      "<i class='fas fa-arrow-circle-right'></i>"
+    ],
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1024: {
+        items: 1
+      }
+    }
+  });
+}
+$(".input-group.date").datepicker({ format: "dd.mm.yyyy" });
+
+$(function() {
+  var output = document.querySelectorAll("#output-range-slider-1")[0];
+
+  $(document).on("input", 'input[type="range"]', function(e) {
+    output.innerHTML = e.currentTarget.value;
+  });
+
+  $("input[type=range]").rangeslider({
+    polyfill: false
+  });
+});
+
+$(function() {
+  var output = document.querySelectorAll("#output-range-slider-2")[0];
+
+  $(document).on("input", 'input[type="range"]', function(e) {
+    output.innerHTML = e.currentTarget.value;
+  });
+
+  $("input[type=range]").rangeslider({
+    polyfill: false
+  });
+});

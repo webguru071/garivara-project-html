@@ -247,6 +247,15 @@ a.btn-facebook:hover {
   -webkit-box-shadow: 0px 4px 8px 0px rgba(254, 105, 85, 0.1);
   box-shadow: 0px 4px 8px 0px rgba(254, 105, 85, 0.1);
 }
+.btn-width{
+  width: 100%;
+}
+.btn-transparent{
+  margin: 0;
+}
+.btn-transparent:hover{
+  background-color: #000 !important;
+}
 
 /*Common input style*/
 input[type=text],
@@ -1187,6 +1196,82 @@ transform: scale(1.1);
 }
 /*---- Service Area End ------*/
 
+
+/*
+------------------------
+ *   # search bar
+ * --------------------------
+*/
+
+#search {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translate(0px, -100%) scale(0, 0);
+  -ms-transform: translate(0px, -100%) scale(0, 0);
+  transform: translate(0px, -100%) scale(0, 0);
+  opacity: 0;
+  z-index: 99999;
+}
+
+#search.open {
+  -webkit-transform: translate(0px, 0px) scale(1, 1);
+  -ms-transform: translate(0px, 0px) scale(1, 1);
+  transform: translate(0px, 0px) scale(1, 1);
+  opacity: 1;
+  z-index: 9999999999999999;
+}
+
+#search input[type="search"] {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0);
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  border: 0px;
+  margin: 0px auto;
+  margin-top: -51px;
+  padding-left: 30px;
+  padding-right: 30px;
+  outline: none;
+}
+
+#search .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 61px;
+  margin-left: -45px;
+}
+
+#search .close {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  background-color: var(--theme-color);
+  opacity: 1;
+  padding: 10px 17px;
+  font-size: 27px;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+#search .close:hover {
+  color: #000;
+}
+/* ---Search Area End----*/
+
+
 /* About Area Start*/
 
 /*About Us*/
@@ -2109,48 +2194,230 @@ width: 25%;
   color: #cecece;
 }
 
-
 /* --Footer Area End-- */
 
+/*-----------------------------
+  Ride-Sharing Details Page
+------------------------------ */
 
+/* ----Banner Slider Start----- */
+.ride-sharing-slider{
+  position: relative;
+  z-index:99999999;
+}
+.ride-sharing-slider .rideslider-item{
+  position: relative;
+  padding: 130px 0px 223px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.ride-sharing-slider .rideslider-item .ride-slider-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 6000ms linear;
+  -moz-transition: all 6000ms linear;
+  -ms-transition: all 6000ms linear;
+  -o-transition: all 6000ms linear;
+  transition: all 6000ms linear;
+}
+.ride-sharing-slider .active .rideslider-item .ride-slider-img  {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
+.ride-sharing-slider .rideslider-item .ride-slider-img:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  content: "";
+  z-index: -1; 
+}
+.ride-sharing-slider .ride-slider-inner {
+  position: relative;
+  z-index: 10;
+}
+.ride-sharing-slider .ride-slider-inner h1 {
+  position: relative;
+  color: #ffffff;
+  font-size:72px;
+  line-height: 80px;
+  font-weight: 500;
+  opacity: 0;
+  margin-bottom: 36px;
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 100ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+  -webkit-transform: translateY(80px);
+  -moz-transform: translateY(80px);
+  -ms-transform: translateY(80px);
+  -o-transform: translateY(80px);
+  transform: translateY(80px);
+}
 
+.ride-sharing-slider .active .ride-slider-inner h1 {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  transition-delay: 1500ms;
+}
 
+.ride-sharing-slider .ride-slider-inner p {
+  position: relative;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 41px;
+  font-weight: 300;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 100ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+  max-width: 580px;
+  margin: 0 auto;
+  -webkit-transform: translateY(80px);
+  -moz-transform: translateY(80px);
+  -ms-transform: translateY(80px);
+  -o-transform: translateY(80px);
+  transform: translateY(80px);
+}
 
+.ride-sharing-slider .active .ride-slider-inner p {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.ride-sharing-slider .ride-slider-inner .btn{
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 100ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+  -webkit-transform: translateY(80px);
+  -moz-transform: translateY(80px);
+  -ms-transform: translateY(80px);
+  -o-transform: translateY(80px);
+  transform: translateY(80px);
+}
+.ride-sharing-slider .active .ride-slider-inner .btn{
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.ride-sharing-slider .owl-nav{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.ride-sharing-slider .owl-carousel .owl-nav button.owl-prev, .ride-sharing-slider .owl-carousel .owl-nav button.owl-next{
+  color: #fff;
+  font-size: 40px;
+}
 
+button:focus {
+  outline:none;
+  outline: none;
+}
+/* ----Banner Slider End----- */
 
+/* ----Make Your Booking  Start----- */
+.make-booking-area{
+  position: relative;
+}
+.make-booking-area::after {
+  content: "";
+  background-color: #000;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.make-text-area{
 
+}
+.make-text-area h2{
+    font-size: 55px;
+    font-weight: 600;
+}
+.booking-from .form-control{
+  height: 60px;
+    width: 100%;
+    background: #242424;
+    border: none;
+    border-radius: 60px;
+    padding: 10px 30px;
+    color: #ffff;
+}
 
+#datepicker-2 > span {
+  position: absolute;
+  z-index: 9;
+  color: #ffffff;
+  right: 32px;
+  top: 15px;
+  font-size: 20px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.booking-from .input-group>.form-control:not(:last-child) {
+border-radius: 50px;
+}
+select.form-control:not([size]):not([multiple]) {
+  height: 60px;
+}
+.form-control:focus {
+  border-color:none;
+  outline: 0;
+  box-shadow: none
+}
+.booking-from select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.time-icon{
+  position: absolute;
+  right: 40px;
+  top:15px;
+  font-size: 20px;
+  color: #fff;
+}
+/* ----Make Your Booking  End----- */
 
 
 /* ----------------Alamin Vi------------------- */
 
-/*CSS START(AL AMIN) */
 /* ==============================================================================*/
-/* ABOUT PAGE */
+/*      ABOUT PAGE */
 /* ==============================================================================*/
 
 /* ---About Area css start (About page)----*/
@@ -2165,8 +2432,6 @@ width: 25%;
 }
 
 /* About Area css end (About page)*/
-
-/* About Video Area css start (About page)*/
 
 /* About Video Area css start (About page)*/
 
@@ -2675,9 +2940,12 @@ input[type="password"] {
 .single-rule h5{
   font-weight: 600;;
 }
-   /* <!--  =========Downloads page start ========= -->*/
+/* <!--  =========rules page End ========= -->*/
 
-.download{
+
+ /* <!--  =========Downloads page start ========= -->*/
+
+ .download{
   background: #fff4f2;
 }
 .list-view1 li{
@@ -2705,28 +2973,7 @@ input[type="password"] {
       height: 100%;
         padding-top: 60px;
     }
-
-
-
-
-
-
-
-    .btn-width{
-      width: 100%;
-    }
-    .btn-transparent{
-      margin: 0;
-    }
-    .btn-transparent:hover{
-      background-color: #000 !important;
-    }
-
-
-
-
-
-    /* <!--  =========rules page start ========= -->*/
+/* <!--  =========rules page start ========= -->*/
 .single-rule h5{
   font-weight: 600;;
 }
@@ -2736,8 +2983,6 @@ input[type="password"] {
 .single-rule ul li{
   padding-bottom: 8px; 
 }
-
-
 .leasing-left{
   padding-right:60px;
 }
@@ -2745,75 +2990,61 @@ input[type="password"] {
 
 
 
-/*
-------------------------
- *   # search bar
- * --------------------------
-*/
 
-#search {
-  position: fixed;
-  top: 0px;
-  left: 0px;
+/* will your earn area css start */
+
+
+.rangeslider__handle {
+  width: 22px;
+  height: 22px;
+}
+.rangeslider__fill{
+  background: var(--main-bg-color);
+}
+.rangeslider--horizontal {
+  height: 10px;
   width: 100%;
-  height: 100%;
-  background-color: #000;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-transform: translate(0px, -100%) scale(0, 0);
-  -ms-transform: translate(0px, -100%) scale(0, 0);
-  transform: translate(0px, -100%) scale(0, 0);
-  opacity: 0;
-  z-index: 99999;
+}
+.rangeslider--horizontal .rangeslider__handle {
+  top: -7px;
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
 }
 
-#search.open {
-  -webkit-transform: translate(0px, 0px) scale(1, 1);
-  -ms-transform: translate(0px, 0px) scale(1, 1);
-  transform: translate(0px, 0px) scale(1, 1);
-  opacity: 1;
-  z-index: 9999999999999999;
-}
 
-#search input[type="search"] {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  color: rgb(255, 255, 255);
-  background: rgba(0, 0, 0, 0);
-  font-size: 60px;
-  font-weight: 300;
-  text-align: center;
-  border: 0px;
-  margin: 0px auto;
-  margin-top: -51px;
-  padding-left: 30px;
-  padding-right: 30px;
-  outline: none;
-}
 
-#search .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: 61px;
-  margin-left: -45px;
+.your-earn-right{
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
+  padding:25px; 
+  border-color: #EDF0F2 !important;
 }
-
-#search .close {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  color: #fff;
-  background-color: var(--theme-color);
-  opacity: 1;
-  padding: 10px 17px;
-  font-size: 27px;
-  -webkit-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  transition: 0.5s all;
+.range-slidecontainer{
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-color:#EDF0F2;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
-#search .close:hover {
-  color: #000;
+.range-slidecontainer h5 {
+  font-weight: 700;
+  padding-bottom: 20px;
 }
+.total-earn{
+  padding-top: 25px;
+}
+.total-earn h3{
+  padding: 8px;
+  font-weight: 700;
+  color: var(--main-bg-color);
+}
+/* will your earn area css end */
+/* rent out area css */
+.rent-out{
+  background: var(--main-bg-color);
+}
+/* question box area css */
+.single-question-box p a{
+  color: var(--main-bg-color);
+}
+/* -----list your car page End -----*/
