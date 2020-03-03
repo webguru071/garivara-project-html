@@ -774,7 +774,7 @@ transform: scale(1.1);
 .main-slider .content h1 {
   position: relative;
   color: #ffffff;
-  font-size: 4.5rem;
+  font-size:72px;
   line-height: 1em;
   font-weight: 500;
   opacity: 0;
@@ -803,7 +803,7 @@ transform: scale(1.1);
   position: relative;
   display: inline-block;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 24px;
   line-height: 1em;
   font-weight: 300;
   text-transform: uppercase;
@@ -1622,6 +1622,13 @@ display: block;
 .location-detail-text h2 span{
 color: var(--main-bg-color);
 }
+.map-contact-item{
+  display: flex;
+}
+.map-contact-area{
+  display: flex;
+  justify-content: space-between;
+}
 .map-phone i:before{
   font-size: 35px;
 }
@@ -2027,7 +2034,7 @@ width: 25%;
 }
 .btn-news:hover{
   color: #fff;
-  background: transparent;
+  background: var(--main-bg-color);
   border-color: #fff;
 }
 /* ----Call to Action Area End---- */
@@ -2733,4 +2740,80 @@ input[type="password"] {
 
 .leasing-left{
   padding-right:60px;
+}
+
+
+
+
+/*
+------------------------
+ *   # search bar
+ * --------------------------
+*/
+
+#search {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translate(0px, -100%) scale(0, 0);
+  -ms-transform: translate(0px, -100%) scale(0, 0);
+  transform: translate(0px, -100%) scale(0, 0);
+  opacity: 0;
+  z-index: 99999;
+}
+
+#search.open {
+  -webkit-transform: translate(0px, 0px) scale(1, 1);
+  -ms-transform: translate(0px, 0px) scale(1, 1);
+  transform: translate(0px, 0px) scale(1, 1);
+  opacity: 1;
+  z-index: 9999999999999999;
+}
+
+#search input[type="search"] {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0);
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  border: 0px;
+  margin: 0px auto;
+  margin-top: -51px;
+  padding-left: 30px;
+  padding-right: 30px;
+  outline: none;
+}
+
+#search .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 61px;
+  margin-left: -45px;
+}
+
+#search .close {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  background-color: var(--theme-color);
+  opacity: 1;
+  padding: 10px 17px;
+  font-size: 27px;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+#search .close:hover {
+  color: #000;
 }

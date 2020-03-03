@@ -205,4 +205,67 @@
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 480px) {
+  .about-text-box {
+    margin-top: 30px;
+  }
+  .footer-bottom-nav ul li a {
+    font-size: 11px;
+  }
+  .single-about-box {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 361px) {
+  .about-text-box {
+    margin-top: 30px;
+  }
+  .footer-bottom-nav ul li a {
+    font-size: 11px;
+  }
+  .single-about-box {
+    margin-bottom: 30px;
+  }
+  .main-slider .content h1 {
+    font-size: 55px;
+  }
+  .main-slider .content h2 {
+    font-size: 16px;
+  }
+  .main-slider .content h2 img {
+    padding-right: 5px;
+  }
+  .btn {
+    padding: 0 22px;
+    font-size: 14px;
+    line-height: 43px;
+  }
+  .how-details {
+    margin-top: 20px;
+  }
+  .map-contact-area {
+    display: inherit !important;
+  }
+  .img-offer-outside {
+    bottom: 55px;
+  }
+  .language-selector .dropdown-menu.pull-right {
+    left: -197px;
+    z-index: 9999999999;
+  }
+  .main-slider .owl-theme .owl-dots {
+    right: 0;
+  }
+  .news-input .form-control {
+    height: 24px !important;
+    padding: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .news-input .form-control {
+    padding: 14px;
+  }
+  .call-text h3 {
+    font-size: 24px;
+  }
 }
