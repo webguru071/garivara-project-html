@@ -30,7 +30,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font-size: 62.5%
   font: inherit;
-  vertical-align: baseline;
 }
 html, body {
   font-size: 62.5%
@@ -280,7 +279,7 @@ input[type="checkbox"] + label {
 display: block;
 position: relative;
 padding-left: 35px;
-margin-bottom: 20px;
+margin-bottom: 10px;
 font-size: 14px;
 cursor: pointer;
 -webkit-user-select: none;
@@ -2362,9 +2361,6 @@ button:focus {
   height: 100%;
   z-index: -1;
 }
-.make-text-area{
-
-}
 .make-text-area h2{
     font-size: 55px;
     font-weight: 600;
@@ -2391,7 +2387,7 @@ button:focus {
 .booking-from .input-group>.form-control:not(:last-child) {
 border-radius: 50px;
 }
-select.form-control:not([size]):not([multiple]) {
+.booking-from  select.form-control:not([size]):not([multiple]) {
   height: 60px;
 }
 .form-control:focus {
@@ -2411,7 +2407,259 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 20px;
   color: #fff;
 }
+.round-btn{
+  border-radius: 50px;
+}
 /* ----Make Your Booking  End----- */
+
+/* ----Inner Content start--- */
+
+/* ---side bar area start-- */
+.form-switch {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.form-switch i {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.5rem;
+  width: 46px;
+  height: 26px;
+  background-color: #e6e6e6;
+  border-radius: 23px;
+  vertical-align: text-bottom;
+  transition: all 0.3s linear;
+}
+.form-switch i::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 42px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+  transition: all 0.25s linear;
+}
+.form-switch i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+  transform: translate3d(2px, 2px, 0);
+  transition: all 0.2s ease-in-out;
+}
+.form-switch:active i::after {
+  width: 28px;
+  transform: translate3d(2px, 2px, 0);
+}
+.form-switch:active input:checked + i::after {
+  transform: translate3d(16px, 2px, 0);
+}
+.form-switch input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.form-switch input:checked + i {
+    background-color: var(--main-bg-color);
+}
+.form-switch input:checked + i::before {
+  transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0);
+}
+.form-switch input:checked + i::after {
+  transform: translate3d(22px, 2px, 0);
+}
+
+.check-box-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.ride-details-side-bar{
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .11);
+  padding: 30px 25px;
+}
+#tabsContent .form-control{
+  background: #fff;
+  height: 50px;
+  border-radius: 0;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+#tabsContent .form-group{
+  position: relative;
+}
+#tabsContent .map-marker{
+  position: absolute;
+  top: 37%;
+  right: 14px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color:#000;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 2px solid #ff6654;
+}
+/* ---side bar area End-- */
+
+/* ---Right side area start-- */
+
+.gride-list-area{
+  display: flex;
+  align-items: center;
+}
+.gride-list-area i{
+  padding-right:20px;
+  font-size: 30px;
+}
+.gride-list-area p{
+  padding-left:30px;
+  font-weight: 600;
+}
+.ride-details-header{
+  position: relative;
+}
+.ride-details-header::before{
+  content: "";
+  background-image: linear-gradient(#ffffff17, #2a2d3e);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.ride-details-header img{
+  width: 100%;
+}
+.rider-details-offer{
+  display: flex;
+  position: absolute;
+  top:20px;
+}
+.rider-details-offer h6{
+  background: #fffffd;
+  padding: 7px 15px;
+  border-radius: 45px;
+  color: #000;
+  font-size: 14px;
+  margin-left: 15px;
+}
+.heart-area{
+  position: absolute;
+  bottom: 25px;
+  left: 16px;
+  color: #fff;
+}
+.heart-area span{
+  padding-left: 10px;
+}
+
+
+.ride-details-body{
+  position: relative;
+  padding: 15px 25px;
+  box-shadow: 0px 0px 45px -23px #000;
+}
+.ride-profile{
+  position: absolute;
+  top: -46px;
+  right: 25px;
+}
+.ride-profile img{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid #ffffff5c;
+}
+.star-area {
+  font-size: 14px;
+}
+.star-area i{
+  color: #feaa3a;
+}
+.star-area span{
+  font-weight: 600;
+  padding-left: 10px;
+}
+.ride-details-text-area h4{
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+.ride-details-text-area h4 i{
+  padding-left: 20px;
+  color: var(--main-bg-color);
+  font-size: 18px;
+}
+.ride-details-text-area p{
+  padding-top: 5px;
+    font-size: 14px;
+}
+.ride-contact-area i{
+  font-size: 20px;
+}
+.ride-contact-area p{
+  padding-left: 5px;
+  font-size: 14px;
+}
+.ride-details-call-area{
+  display: flex;
+  justify-content: space-between;
+}
+.ride-details-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.ride-bottom-icon{
+  display: flex;
+  align-items: center;
+}
+.ride-bottom-icon i{
+  background: var(--main-bg-color);
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  font-size: 17px;
+  color: #fff;
+}
+.ride-bottom-icon span{
+  padding-left: 10px;
+  font-size: 14px;
+  color: var(--main-bg-color);
+}
+.ride-bottom-icon h6{
+  margin-left: 20px;
+  background: white;
+  width: 30px;
+  height: 30px;
+  font-size: 13px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #c1c1c1;
+}
+.ride-bottom-closed p{
+  font-size: 14px;
+}
+
+/* ---Right side area start-- */
+
+/* ----Inner Content End--- */
+
+/* ---Ridesharing-inner Content  Start----- */
+
+
+
+/* ----Ridesharing-inner Content  End----- */
+
+
+
 
 
 /* ----------------Alamin Vi------------------- */
@@ -2990,10 +3238,9 @@ input[type="password"] {
 
 
 
+/* -----list your car page start -----*/
 
 /* will your earn area css start */
-
-
 .rangeslider__handle {
   width: 22px;
   height: 22px;
@@ -3010,9 +3257,6 @@ input[type="password"] {
   touch-action: pan-y;
   -ms-touch-action: pan-y;
 }
-
-
-
 .your-earn-right{
   -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
