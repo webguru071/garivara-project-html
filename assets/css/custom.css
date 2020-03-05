@@ -2648,15 +2648,159 @@ border-radius: 50px;
   font-size: 14px;
 }
 
+/* ----LIst View Drtails----- */
+.ride-list-area{
+position: relative;
+}
+.ride-list-area::before{
+  content: "";
+  background-image: linear-gradient(#ffffff17, #2a2d3e);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.ride-list-area img{
+  width: 100%;
+}
+.ride-details-list-area{
+  box-shadow: 0px 0px 45px -23px #000;
+}
+.ride-details-list-body{
+  padding-right: 25px;
+}
+.ride-list-profile{
+  position: absolute;
+  top: 40%;
+  left: -60px;
+}
+.ride-list-profile img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.ride-details-list-text-area h4 {
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+.ride-details-list-text-area h4 i {
+  padding-left: 20px;
+  color: var(--main-bg-color);
+  font-size: 18px;
+}
+.ride-details-list-text-area p {
+  padding-top: 5px;
+  font-size: 14px;
+}
+.ride-details-list-body{
+  padding-top: 60px;
+}
+/*------ pagination --------*/
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.pagination > .disabled > a,
+.pagination > .disabled > a:focus,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > span,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > span:hover {
+	color: none;
+	cursor: not-allowed;
+	background-color: none;
+	border-color: none;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+	font-size: 16px;
+	font-weight: 700;
+	padding: 5px 14px;
+	margin-left: 15px;
+	background: none;
+	color: #4f535b;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+	z-index: 3;
+	color: #fff;
+	cursor: default;
+	background: var(--main-bg-color);
+	border-color: var(--main-bg-color);
+	border-radius: 50%;
+}
+
+.blog-pagination {
+	margin: 70px auto 0 auto;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+	background: #4abbe5;
+	color: #fff !important;
+	margin: 5px 0;
+}
+
+
 /* ---Right side area start-- */
 
 /* ----Inner Content End--- */
 
-/* ---Ridesharing-inner Content  Start----- */
-
-
-
 /* ----Ridesharing-inner Content  End----- */
+
+
+
+/* -- Car-Rentel Page Start-- */
+/*filter search*/
+.filter-search{
+  height: 1000px;
+  padding: 15px 15px 0 0;
+  overflow-y: scroll;
+}
+
+.filter-search .form-control {
+  min-height: 47px;
+}
+
+.my-location {
+  cursor: pointer;
+}
+
+.my-location > i{
+  font-size: 20px;
+  margin-right:5px; 
+}
+
+.paginations li a:hover{
+  color: #ffffff;
+}
+.title-right-icon li i {
+  font-size: 1.5rem;
+}
+.big-single-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 6px;
+}
+.list-boxs ul li a {
+  border: 1px solid #ddd;
+}
+.list-boxs > ul > li {
+  margin-bottom: 30px;
+}
+/* -- Car-Rentel Page End-- */
+
+
 
 
 
@@ -3292,3 +3436,278 @@ input[type="password"] {
   color: var(--main-bg-color);
 }
 /* -----list your car page End -----*/
+
+
+/* -- Sitemap Page Start-- */
+.sitemap-wrapper{
+
+}
+.sitemap-wrapper ul li{
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.sitemap-wrapper ul li a{
+  font-size: 16px;
+  color: var(--dark-bg-color);
+  font-weight: 400;
+}
+.sitemap-wrapper ul li a:hover{
+  color: var(--main-bg-color);
+}
+/* -- Sitemap Page End-- */
+
+/* --Safety Page Start -- */
+.safety-header-text h3{
+  font-weight: 600;
+}
+.safety-header-text h6{
+  padding: 12px 0;
+  font-size: 20px;
+  line-height: 29px;
+}
+.safety-header-text p a{
+  color: var(--main-bg-color);
+}
+.safety-header-text hr{
+  margin:30px 0;
+}
+.safety-wrapper h5{
+  font-size: 22px;
+  font-weight: 600;
+}
+/* --Safety Page End -- */
+
+
+
+
+
+
+/* JOB page */
+/*search box css start here*/
+.search-sec {
+  padding: 45px 90px;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+.wrn-btn{
+    width: 100%;
+    font-weight: 600;
+    border-radius: 0;
+    border: 0;
+    height: calc(3rem + 2px) !important;
+    line-height: 51px;
+    color: #fff !important;
+}
+@media (min-width: 992px){
+.search-sec {
+  position: relative;
+  top: -74px;
+  background: rgba(26, 70, 104, 0.9);
+}       
+}
+
+@media (max-width: 992px){
+    .search-sec{
+        background: #1A4668;
+    }
+}
+/*search box css start end*/
+/* popular job categories area css start */
+.single-category{
+  padding-bottom: 60px;
+}
+.single-category i{
+  color: var(--main-bg-color);
+}
+.single-category h5{
+  padding:12px 0;
+}
+/* popular job categories area css end */
+/* How It Works Area css start */
+.work-services{
+  background: #ededed;
+}
+.single-work{
+  position: relative;
+}
+.single-work i{
+  padding:25px 20px;
+  background: #fbf7f7;
+  font-size: 40px;
+}
+.single-work span{
+    position: absolute;
+    right: 35%;
+    top: -7%;
+    background: #ff6654;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+}
+.single-work h5{
+  padding:18px 0;
+}
+/* How It Works Area css end */
+/* featured jobs Area css start */
+.featured-jobs .title{
+  display: flex;
+  justify-content: space-between;
+}
+.featured-jobs .title a{
+  font-size: 18px;
+}
+.featured-jobs .card{
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .11);
+}
+.job-company-logo{
+  margin:20px;
+}
+.card-details{
+  display: flex;
+  align-items: center;
+}
+.featured-jobs .card-body span,
+.featured-jobs .card-body p a{
+  color: var(--main-bg-color);
+}
+.featured-jobs .card-body h6{
+  font-weight: 600
+}
+.btn-job-browes{
+  padding-right: 20px;
+}
+/* featured jobs Area css end */
+
+/* Hire Freelancer Area css start */
+.hire-freelnacer{
+  background: #ededed;
+}
+.hire-freelnacer .title {
+  display: flex;
+  justify-content: space-between;
+}
+.hire-freelnacer .title a{
+  font-size: 18px;
+}
+.owl-hire-free .hire-item{
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .11);
+}
+.owl-carousel .hire-item img{
+  display: inline;
+}
+.hire-rate {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.hire-rate b{
+  font-size: 22px;
+  color: var(--main-bg-color);
+}
+.hire-rate i{
+  font-size: 22px;
+}
+.hire-item img{
+  width: 100px !important;;
+  height: 100px;
+  border:1px solid;
+  border-radius: 50%;
+}
+.hire-item a h5 {
+  font-size: 20px;
+  color: #001238;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  font-weight: 600;
+}
+.hire-item a h5:hover{
+  color: var(--main-bg-color);
+}
+.profile-info{
+  position: relative;
+}
+.profile-info small {
+  width: 30px;
+  height: 30px;
+  background: var(--main-bg-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  position: absolute;
+  right: 34%;
+  bottom: 55%;
+  font-weight: 600;
+}
+.hire-item .location {
+  padding: 12px 20px;
+  background: #e6d9d9;
+  display: flex;
+  justify-content: space-between;
+}
+.hire-item .location p i {
+  width: 30px;
+  height: 30px;
+  background: var(--main-bg-color);
+  border-radius: 50%;
+  margin-left: 5px;
+  color: #fff;
+  text-align: center;
+  line-height: 26px;
+}
+.job-succ{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-profile{
+  padding: 0 20px;
+}
+/* Hire Freelancer Area css end */
+
+/* ---News Letter page --- */
+
+/* vivid section start */
+.previwe {
+  color:#ff6654;
+  margin: 20px 0px;
+}
+.previwe li,.list-view li{
+  line-height:30px;
+}
+.previwe li::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f061";
+  padding-right: 10px;
+}
+.list-view li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 10px;
+}
+.vivid-content p {
+    padding: 16px 0;
+}
+.btn-purchase {
+    letter-spacing: 7px;
+    width: 100%;
+}
+/* vivid section end */

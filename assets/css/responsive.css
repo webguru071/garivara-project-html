@@ -74,6 +74,23 @@
   .leasing-left {
     padding-right: 20px;
   }
+
+  /* --ride-details-page --*/
+  .ride-details-list-body {
+    padding-top: 30px;
+  }
+  .booking-from {
+    padding-top: 50px;
+  }
+  .make-text-area h2 {
+    padding: 10px 0;
+  }
+  .main-ridesharing-inner {
+    padding-top: 40px;
+  }
+  .padding-md {
+    padding-top: 30px;
+  }
 }
 /* Small devices (landscape phones, less than 768px)*/
 @media (max-width: 768px) {
@@ -145,6 +162,12 @@
     align-items: center;
     display: flex;
   }
+  .error-img img {
+    width: 100%;
+  }
+  .sitemap-wrapper {
+    text-align: center;
+  }
 }
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 576px) {
@@ -200,6 +223,18 @@
   }
   .mobile-img {
     margin-top: 30px;
+  }
+  .ride-list-profile {
+    position: absolute;
+    top: -16%;
+    left: 68%;
+  }
+  .ride-details-list-body {
+    padding: 30px;
+  }
+  .pagination > li > a,
+  .pagination > li > span {
+    margin-left: 0px;
   }
 }
 

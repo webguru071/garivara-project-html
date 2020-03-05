@@ -251,6 +251,29 @@ if ($(".ride-slider-carousel").length) {
     }
   });
 }
+
+//Hire Me Slider
+$(".owl-hire-free").owlCarousel({
+  loop: true,
+  margin: 30,
+  dots: true,
+  nav: false,
+  items: 4,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    992: {
+      items: 3
+    }
+  }
+});
 $(".input-group.date").datepicker({ format: "dd.mm.yyyy" });
 
 $(function() {
