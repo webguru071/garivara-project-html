@@ -2750,7 +2750,6 @@ position: relative;
 	margin: 5px 0;
 }
 
-
 /* ---Right side area start-- */
 
 /* ----Inner Content End--- */
@@ -2801,15 +2800,106 @@ position: relative;
 /* -- Car-Rentel Page End-- */
 
 
+/* -- How It Work page Start -- */
+.how-tabs-header{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.how-it-works-area .nav-tabs{
+  border: none;
+}
+.how-it-works-area .nav-tabs .nav-item{
+  width: 300px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  border: 2px solid  var(--main-bg-color);}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: var(--main-bg-color);
+  border-color: transparent;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+}
+.how-items-details h4 {
+  font-weight: 700;
+  color: var(--main-bg-color);
+}
+.how-area-center{
+  align-items: center;
+  height: 100%;
+}
+.how-it-works-area  #passenger  div.how-area-center:nth-child(even){
+  flex-direction: row-reverse;
+  display: flex;
+}
+.how-it-works-area  #driver  div.how-area-center:nth-child(even){
+  flex-direction: row-reverse;
+  display: flex;
+}
+/* -- Still-Question area  -- */
+.still-question-area{
+  background:#F7F8FA;
+}
+.ready-img img{
+  width: 100%;
+}
+/* -- How It Work page End -- */
+
+/* --  press page Start -- */
+.press-news-img{
+  position: relative;
+  top: -50px;
+}
+.press-news-img img{
+  width: 100%;
+}
+
+.press-profile img{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+.press-profile h6{
+  font-size: 20px;
+}
+.press-profile p{
+  font-size: 14px;
+  padding-top: 5px;
+}
+.press-profile p a{
+  font-size: 16px;
+}
+.press-profile p a:hover{
+ color: var(--main-bg-color);
+}
+.press-author-details-brand{
+  background: #00ffc4;
+  height: 100%;
+  text-align: center;
+  padding: 70px 0;
+}
+.press-author-details-brand i{
+  font-size: 60px;
+  color: var(--main-bg-color);
+}
+/* --  press page End -- */
 
 
-
-
-
+/* --  Car-offer page Start -- */
+.car-offer-img{
+  text-align: center;
+}
+.car-offer-img img{
+ width: 100%;
+}
+/* --  Car-offer page End -- */
 /* ----------------Alamin Vi------------------- */
 
+/*CSS START(AL AMIN) */
 /* ==============================================================================*/
-/*      ABOUT PAGE */
+/* ABOUT PAGE */
 /* ==============================================================================*/
 
 /* ---About Area css start (About page)----*/
@@ -3324,20 +3414,12 @@ input[type="password"] {
   color: #aeb6bf;
   font-size: 14px;
 }
-/* <!--  =========Leasing Details sections right side End========= -->*/
+/* ----Leasing Details sections right side End------*/
 
 
+   /*  =========Downloads page start =========*/
 
-/* <!--  =========rules page start ========= -->*/
-.single-rule h5{
-  font-weight: 600;;
-}
-/* <!--  =========rules page End ========= -->*/
-
-
- /* <!--  =========Downloads page start ========= -->*/
-
- .download{
+.download{
   background: #fff4f2;
 }
 .list-view1 li{
@@ -3365,7 +3447,18 @@ input[type="password"] {
       height: 100%;
         padding-top: 60px;
     }
-/* <!--  =========rules page start ========= -->*/
+
+    .btn-width{
+      width: 100%;
+    }
+    .btn-transparent{
+      margin: 0;
+    }
+    .btn-transparent:hover{
+      background-color: #000 !important;
+    }
+
+/* -----rules page start -----*/
 .single-rule h5{
   font-weight: 600;;
 }
@@ -3375,16 +3468,22 @@ input[type="password"] {
 .single-rule ul li{
   padding-bottom: 8px; 
 }
+
+
 .leasing-left{
   padding-right:60px;
 }
-
-
+.single-question-box h5 , .single-rule h5{
+  font-weight: 600;;
+}
+/* ----rules page end -----*/
 
 
 /* -----list your car page start -----*/
 
 /* will your earn area css start */
+
+
 .rangeslider__handle {
   width: 22px;
   height: 22px;
@@ -3401,6 +3500,7 @@ input[type="password"] {
   touch-action: pan-y;
   -ms-touch-action: pan-y;
 }
+
 .your-earn-right{
   -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
@@ -3437,277 +3537,3 @@ input[type="password"] {
 }
 /* -----list your car page End -----*/
 
-
-/* -- Sitemap Page Start-- */
-.sitemap-wrapper{
-
-}
-.sitemap-wrapper ul li{
-  font-size: 18px;
-  color: #000;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.sitemap-wrapper ul li a{
-  font-size: 16px;
-  color: var(--dark-bg-color);
-  font-weight: 400;
-}
-.sitemap-wrapper ul li a:hover{
-  color: var(--main-bg-color);
-}
-/* -- Sitemap Page End-- */
-
-/* --Safety Page Start -- */
-.safety-header-text h3{
-  font-weight: 600;
-}
-.safety-header-text h6{
-  padding: 12px 0;
-  font-size: 20px;
-  line-height: 29px;
-}
-.safety-header-text p a{
-  color: var(--main-bg-color);
-}
-.safety-header-text hr{
-  margin:30px 0;
-}
-.safety-wrapper h5{
-  font-size: 22px;
-  font-weight: 600;
-}
-/* --Safety Page End -- */
-
-
-
-
-
-
-/* JOB page */
-/*search box css start here*/
-.search-sec {
-  padding: 45px 90px;
-}
-.search-slt{
-    display: block;
-    width: 100%;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    color: #55595c;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    height: calc(3rem + 2px) !important;
-    border-radius:0;
-}
-.wrn-btn{
-    width: 100%;
-    font-weight: 600;
-    border-radius: 0;
-    border: 0;
-    height: calc(3rem + 2px) !important;
-    line-height: 51px;
-    color: #fff !important;
-}
-@media (min-width: 992px){
-.search-sec {
-  position: relative;
-  top: -74px;
-  background: rgba(26, 70, 104, 0.9);
-}       
-}
-
-@media (max-width: 992px){
-    .search-sec{
-        background: #1A4668;
-    }
-}
-/*search box css start end*/
-/* popular job categories area css start */
-.single-category{
-  padding-bottom: 60px;
-}
-.single-category i{
-  color: var(--main-bg-color);
-}
-.single-category h5{
-  padding:12px 0;
-}
-/* popular job categories area css end */
-/* How It Works Area css start */
-.work-services{
-  background: #ededed;
-}
-.single-work{
-  position: relative;
-}
-.single-work i{
-  padding:25px 20px;
-  background: #fbf7f7;
-  font-size: 40px;
-}
-.single-work span{
-    position: absolute;
-    right: 35%;
-    top: -7%;
-    background: #ff6654;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    color: #fff;
-}
-.single-work h5{
-  padding:18px 0;
-}
-/* How It Works Area css end */
-/* featured jobs Area css start */
-.featured-jobs .title{
-  display: flex;
-  justify-content: space-between;
-}
-.featured-jobs .title a{
-  font-size: 18px;
-}
-.featured-jobs .card{
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .11);
-}
-.job-company-logo{
-  margin:20px;
-}
-.card-details{
-  display: flex;
-  align-items: center;
-}
-.featured-jobs .card-body span,
-.featured-jobs .card-body p a{
-  color: var(--main-bg-color);
-}
-.featured-jobs .card-body h6{
-  font-weight: 600
-}
-.btn-job-browes{
-  padding-right: 20px;
-}
-/* featured jobs Area css end */
-
-/* Hire Freelancer Area css start */
-.hire-freelnacer{
-  background: #ededed;
-}
-.hire-freelnacer .title {
-  display: flex;
-  justify-content: space-between;
-}
-.hire-freelnacer .title a{
-  font-size: 18px;
-}
-.owl-hire-free .hire-item{
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .11);
-}
-.owl-carousel .hire-item img{
-  display: inline;
-}
-.hire-rate {
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-}
-.hire-rate b{
-  font-size: 22px;
-  color: var(--main-bg-color);
-}
-.hire-rate i{
-  font-size: 22px;
-}
-.hire-item img{
-  width: 100px !important;;
-  height: 100px;
-  border:1px solid;
-  border-radius: 50%;
-}
-.hire-item a h5 {
-  font-size: 20px;
-  color: #001238;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  font-weight: 600;
-}
-.hire-item a h5:hover{
-  color: var(--main-bg-color);
-}
-.profile-info{
-  position: relative;
-}
-.profile-info small {
-  width: 30px;
-  height: 30px;
-  background: var(--main-bg-color);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  align-items: center;
-  position: absolute;
-  right: 34%;
-  bottom: 55%;
-  font-weight: 600;
-}
-.hire-item .location {
-  padding: 12px 20px;
-  background: #e6d9d9;
-  display: flex;
-  justify-content: space-between;
-}
-.hire-item .location p i {
-  width: 30px;
-  height: 30px;
-  background: var(--main-bg-color);
-  border-radius: 50%;
-  margin-left: 5px;
-  color: #fff;
-  text-align: center;
-  line-height: 26px;
-}
-.job-succ{
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-.btn-profile{
-  padding: 0 20px;
-}
-/* Hire Freelancer Area css end */
-
-/* ---News Letter page --- */
-
-/* vivid section start */
-.previwe {
-  color:#ff6654;
-  margin: 20px 0px;
-}
-.previwe li,.list-view li{
-  line-height:30px;
-}
-.previwe li::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f061";
-  padding-right: 10px;
-}
-.list-view li::before {
-  content: "\f00c";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  padding-right: 10px;
-}
-.vivid-content p {
-    padding: 16px 0;
-}
-.btn-purchase {
-    letter-spacing: 7px;
-    width: 100%;
-}
-/* vivid section end */
