@@ -274,6 +274,7 @@ $(".owl-hire-free").owlCarousel({
     }
   }
 });
+
 $(".input-group.date").datepicker({ format: "dd.mm.yyyy" });
 
 $(function() {

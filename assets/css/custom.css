@@ -2895,6 +2895,113 @@ position: relative;
  width: 100%;
 }
 /* --  Car-offer page End -- */
+
+
+
+
+
+/* --Popular-Routs page Strat-- */
+.popular-routs-img{
+  position: relative;
+  margin-bottom: 30px;
+}
+.popular-routs-img:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#fff6f61c, #0000009c);
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+.popular-routs-img p {
+  z-index: 999;
+  color: #fff;
+  position: absolute;
+  bottom: 14px;
+  left: 7%;
+  font-size: 20px;
+}
+.popular-routs-img img{
+  width: 100%;
+  border-radius: 10px;
+}
+.popular-routes div.popular-routs-img:nth-child(4){
+  margin-top: 20px;
+}
+/* --Popular-Routs wpage End-- */
+
+
+/* --Blog page Strat-- */
+.blog-page-area{
+
+}
+.blog-page-items{
+
+}
+.blog-items-img img{
+  width: 100%;
+  border-radius: 10px;
+}
+.blog-page-text{
+
+}
+.blog-page-tex h4 a{
+
+}
+.blog-page-text ul{
+
+}
+.blog-page-text ul li{
+  display: inline-flex;
+  align-items: center;
+  padding-right: 35px;
+}
+.blog-page-text ul li i{
+  color: var(--main-bg-color);
+  padding-right: 10px;
+}
+/* --Side Bar Wedget-- */
+.blog-sidebar-wedget{
+
+}
+.blog-wedget-box{
+  background: whitesmoke;
+  padding: 20px;
+}
+.blog-wedget-heading {
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+
+.blog-wedget-heading h4{
+  font-size: 20px;
+  font-weight: 700;
+}
+.blog-search-input{
+  position: relative;
+  margin-top: 25px;
+}
+.blog-search-input i{
+  position: absolute;
+  right: 16px;
+  top: 14px;
+  font-size: 16px;
+}
+.blog-search-input .form-control{
+  background: #fff;
+}
+/* --Blog Page End-- */
+
+
+
+
+
+
+
+
 /* ----------------Alamin Vi------------------- */
 
 /*CSS START(AL AMIN) */
