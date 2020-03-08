@@ -14,10 +14,29 @@
   .video-content {
     margin-top: -395px;
   }
+  /* job page */
+  .profile-info small {
+    right: 30%;
+  }
+  .single-category h5 {
+    font-size: 16px;
+  }
+  .single-work .single-icon span {
+    right: 110px;
+  }
+  /* support page */
+  .support-contact {
+    padding: 30px 30px 0 30px;
+  }
+  /* registration and login page */
+  .login-left .media .media-body h5 {
+    color: #5d6d7e;
+    font-size: 18px;
+  }
 }
 
 /* Medium devices (tablets, less than 992px)*/
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   /* ==============================================================================*/
   /*(Leasing page)*/
   /* ==============================================================================*/
@@ -99,9 +118,33 @@
   .how-items-img img {
     width: 100%;
   }
+  .blog-page-items {
+    padding-right: 0px;
+  }
+  .blog-sidebar-wedget {
+    padding-top: 50px;
+  }
+  /* job page */
+  .profile-info small {
+    right: 33%;
+  }
+  .single-work .single-icon span {
+    right: 70px;
+  }
+  /* support page */
+  .support .section-heading-box p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .support nav > .nav.nav-tabs {
+    margin: 0;
+  }
+  .support-contact {
+    margin-right: 20px;
+  }
 }
 /* Small devices (landscape phones, less than 768px)*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* Global css */
   h1 {
     font-size: 38px;
@@ -186,9 +229,56 @@
   .how-tabs-header {
     padding-bottom: 50px;
   }
+
+  /* job page */
+  .search-sec {
+    margin-top: -130px;
+  }
+  .work-services {
+    padding-bottom: 0;
+    padding-top: 60px;
+  }
+  .search-field {
+    padding-bottom: 10px;
+  }
+  .profile-info small {
+    right: 39%;
+  }
+  .hire-freelnacer .title,
+  .featured-jobs .title,
+  .card-details {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .btn-job-browes {
+    padding-left: 20px;
+  }
+  .single-work {
+    padding-bottom: 60px;
+  }
+  .single-work .single-icon span {
+    right: 220px;
+  }
+  .single-category {
+    padding-bottom: 35px;
+  }
+  /* support page */
+  .support-contact {
+    margin-right: 0;
+  }
+  .support nav > .nav.nav-tabs {
+    margin: 0;
+  }
+  .support-contact {
+    margin-bottom: 60px;
+  }
+  /* insurance page */
+  .single-insurance-reapons {
+    padding-top: 30px;
+  }
 }
 /* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   /* Global css */
   h1 {
     font-size: 28px;
@@ -261,6 +351,30 @@
     width: 100%;
     padding: 50px 40px;
   }
+  /* job page */
+  .banner-form {
+    padding-bottom: 0;
+  }
+  .search-sec {
+    padding: 45px 55px;
+  }
+  .single-work .single-icon span {
+    right: 238px;
+  }
+  /* support page */
+  .support nav > div a.nav-item.nav-link,
+  .support nav > div a.nav-item.nav-link.active {
+    padding: 18px 0;
+  }
+  /* registration and login page */
+  .regTabs-heading .nav-tabs .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+  .regTabs-heading .nav-tabs .nav-item .nav-link {
+    margin-right: 0;
+    margin-top: 12px;
+  }
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
@@ -277,6 +391,13 @@
   .how-it-works-area .nav-tabs .nav-item {
     width: 155px;
     font-size: 14px;
+  }
+  /*  job page */
+  .single-work .single-icon span {
+    right: 191px;
+  }
+  .profile-info small {
+    right: 37%;
   }
 }
 @media (max-width: 361px) {
@@ -327,6 +448,13 @@
     width: 136px;
     font-size: 12px;
   }
+  /* job page */
+  .single-work .single-icon span {
+    right: 132px;
+  }
+  .profile-info small {
+    right: 33%;
+  }
 }
 
 @media (max-width: 320px) {
@@ -335,5 +463,12 @@
   }
   .call-text h3 {
     font-size: 24px;
+  }
+  /* job page */
+  .single-work .single-icon span {
+    right: 112px;
+  }
+  .profile-info small {
+    right: 31%;
   }
 }
