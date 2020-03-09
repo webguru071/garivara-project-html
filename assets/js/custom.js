@@ -277,6 +277,9 @@ $(".owl-hire-free").owlCarousel({
 
 $(".input-group.date").datepicker({ format: "dd.mm.yyyy" });
 
+/*----------------------------------------
+    range slider (list your car Page)
+ ----------------------------------------*/
 $(function() {
   var output = document.querySelectorAll("#output-range-slider-1")[0];
 

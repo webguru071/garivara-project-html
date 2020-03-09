@@ -3093,7 +3093,52 @@ position: relative;
   color: #fff;
   padding-right: 0;
 }
+/* ---Media  admin -- */
+.about-admin{
+  padding: 35px;
+  box-shadow: 0px 0px 14px -6px #0000005e;
+}
+.about-admin .media img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;;
+}
+.commemt-heading{
+  display: flex;
+}
+.commemt-heading ul{
+  margin-left: 30px;
+}
+.commemt-heading ul li{
+
+}
+.commemt-heading ul li a{
+  color: var(--main-bg-color)
+}
+.commint-list .media{
+  border-bottom: 1px solid red;
+  padding: 0px 0 25px 0;
+}
+.comment-form .form-control{
+  background: #fff;
+}
 /* --blog-details Page End-- */
+
+
+
+
+/* --leasing Business Page Start-- */
+.how-it-works-area #private div.how-area-center:nth-child(even) {
+  flex-direction: row-reverse;
+  display: flex;
+}
+.how-it-works-area #business div.how-area-center:nth-child(even) {
+  flex-direction: row-reverse;
+  display: flex;
+}
+/* --leasing Business Page End-- */
+
+
 
 
 
@@ -3806,33 +3851,17 @@ input[type="password"] {
 
 /* featured jobs Area css start */
 
-.featured-jobs .title {
-  display: flex;
-  justify-content: space-between;
+.list-unstyled{
+
 }
-.featured-jobs .title a {
-  font-size: 18px;
+.list-unstyled .media img{
+  width: 170px;
+  height: 160px;
+  border: 1px solid #000;
 }
-.featured-jobs .card {
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .11);
-}
-.job-company-logo {
-  margin: 20px;
-}
-.card-details {
-  display: flex;
-  align-items: center;
-}
-.featured-jobs .card-body span,
-.featured-jobs .card-body p a {
-  color: var(--main-bg-color);
-}
-.featured-jobs .card-body h6 {
-  font-weight: 600;
-}
-.btn-job-browes {
-  padding-right: 20px;
-}
+
+
+
 /* featured jobs Area css end */
 
 /* Hire Freelancer Area css start */
@@ -4092,7 +4121,7 @@ input[type="password"] {
   border-radius: 0;
   margin-right: 8px;
 }
-.regTabs-heading .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+.regTabs-heading .nav-tabs .nav-item.show .nav-link, .regTabs-heading  .nav-tabs .nav-link.active {
   color: #000;
   border-radius: 0;
   background: #000 !important;
@@ -4222,3 +4251,43 @@ input[type="password"] {
   padding-top: 30px;
 }
 /* privacy policy area css end */
+/* business area css start */
+/* receipt area start */
+.single-receipt i{
+  font-size: 32px;
+  color: var(--main-bg-color);
+  padding-bottom: 30px;
+}
+.single-receipt h4{
+  font-weight: 600;
+}
+/* receipt area end */
+
+/* try-keyless-car area start */
+.try-keyless-car{
+  background: #ededed;
+}
+.keyless-car-details{
+  display: flex;
+  align-items: center;
+}
+.keyless-car-pra h2{
+  color: var(--main-bg-color);
+  font-size: 32px;
+}
+/* try-keyless-car area end */
+.single-occasion h4{
+  padding-bottom: 15px;
+  font-weight: 700;
+}
+/* try-keyless-car area start */
+/* business area css end */
+
+/* Terms page css start */
+.terms-heading{
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 10px 0;
+}
+#terms .terms-details p{
+  padding: 5px 0;
+}
