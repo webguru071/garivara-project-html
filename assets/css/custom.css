@@ -646,6 +646,12 @@ transform: scale(1.1);
 .mines-icon i{
   padding-left: 5px;
 }
+.site-header .dropdown-menu li a img{
+    width: 16px;
+    height: 16px;
+}
+
+
 /*language*/
 .language-selector > .dropdown-toggle {
   display: inline-block;
@@ -1680,11 +1686,6 @@ display: block;
 .map-area{
   background-image: url("../images/map-bg.jpg");
   z-index: 999;
-
-  /* background: url("../images/map-bg.jpg") center, url("../images/dot-bg.png") repeat-x left bottom;
-  background-repeat: no-repeat, repeat-x;
-  z-index: 999; */
-  /* background:url("../images/dot-bg.png") repeat-x left bottom; */
 }
 .map-area:after{
   content: "";
@@ -3064,9 +3065,6 @@ position: relative;
   transform: translateY(50%);
   opacity: 0.3;
 }
-.sare-post-arae{
-
-}
 .sare-post-arae ul li{
   padding-right: 13px;
 }
@@ -3124,9 +3122,6 @@ position: relative;
 }
 /* --blog-details Page End-- */
 
-
-
-
 /* --leasing Business Page Start-- */
 .how-it-works-area #private div.how-area-center:nth-child(even) {
   flex-direction: row-reverse;
@@ -3141,19 +3136,12 @@ position: relative;
 
 
 
-
 /* ----------------Alamin Vi------------------- */
 
-/*CSS START(AL AMIN) */
-
-/* ==============================================================================*/
-
-/* ABOUT PAGE */
-
-/* ==============================================================================*/
-
 /* ---About Area css start (About page)----*/
-
+#about-banner-bottom{
+  background: linear-gradient(to bottom, rgba(4, 4, 4, 0.52), rgba(28, 25, 26, 0.73)), url("../images/about-banner.jpg");
+}
 #about-banner {
   background: linear-gradient(to bottom, rgba(4, 4, 4, 0.52), rgba(28, 25, 26, 0.73)), url("../images/about-banner.jpg");
 }
@@ -3342,15 +3330,13 @@ position: relative;
   background: transparent;
   color: #fff;
 }
-/* About Video Area css end (About page)*/
 
-/* ==============================================================================*/
+/* ---About Area css End (About page)----*/
 
-/*                  (Leasing page)*/
 
-/* ==============================================================================*/
+/* --Leasing page Area css Start ----*/
 
-/* ========Dreams car  area style start==========*/
+/* --Dreams car  area style start--*/
 
 .single-dream-car .card-body {
   -ms-flex: 1 1 auto;
@@ -3379,9 +3365,9 @@ position: relative;
   font-weight: 600;
   padding-top: 10px;
 }
-/* ========Dreams car  area style end==========*/
+/* --Dreams car  area style end --*/
 
-/* Promo Area css Start */
+/*-- Promo Area css Start -- */
 
 .promo-area {
   position: relative;
@@ -3454,9 +3440,10 @@ position: relative;
   padding: 6px 25px;
   line-height: 2;
 }
-/* Promo Area css end */
+/*-- Promo Area css end -- */
 
-/* ==========Question and answer Area css start=========== */
+
+/*-- Question and answer Area css start -- */
 
 .text-doc {
   font-size: 13px;
@@ -3472,15 +3459,13 @@ position: relative;
   background: transparent;
   padding: 22px;
 }
-/* ==========Question and answer Area css end=========== */
+/*-- Question and answer Area css End -- */
 
-/* ==============================================================================*/
 
-/*(Leasing Details page)*/
+/*-- (Leasing Details page) -- */
 
-/* ==============================================================================*/
 
-/* <!--  =========Leasing Details sections left side start========= -->*/
+/* <!-- Leasing Details sections left side star -->*/
 
 .img-label {
   text-transform: uppercase;
@@ -3571,9 +3556,9 @@ position: relative;
 .i-text i {
   font-size: 24px;
 }
-/* <!--  =========Leasing Details sections left side End========= -->*/
+/* <!--  Leasing Details sections left side End -->*/
 
-/* <!--  =========Leasing Details sections right side start========= -->*/
+/* <!-- Leasing Details sections right side start -->*/
 
 .icon-wrapper .i-class i {
   font-size: 24px;
@@ -3634,7 +3619,7 @@ input[type="password"] {
 }
 /* ----Leasing Details sections right side End------*/
 
-/*  =========Downloads page start =========*/
+/* --Downloads page start--*/
 
 .download {
   background: #fff4f2;
@@ -3696,7 +3681,7 @@ input[type="password"] {
 
 /* -----list your car page start -----*/
 
-/* will your earn area css start */
+/*-- will your earn area css start -- */
 
 .rangeslider__handle {
   width: 22px;
@@ -3739,14 +3724,14 @@ input[type="password"] {
   font-weight: 700;
   color: var(--main-bg-color);
 }
-/* will your earn area css end */
+/* --will your earn area css end --*/
 
-/* rent out area css */
+/* --rent out area css --*/
 
 .rent-out {
   background: var(--main-bg-color);
 }
-/* question box area css */
+/*--question box area css--*/
 
 .single-question-box p a {
   color: var(--main-bg-color);
@@ -3803,9 +3788,9 @@ input[type="password"] {
   opacity: .5;
   font-size: 14px;
 }
-/*search box css start end*/
+/*--search box css start end--*/
 
-/* popular job categories area css start */
+/*--popular job categories area css start--*/
 
 .single-category {
   padding-bottom: 60px;
@@ -3817,9 +3802,9 @@ input[type="password"] {
   padding: 12px 0;
   font-weight: 600;
 }
-/* popular job categories area css end */
+/*-- popular job categories area css end --*/
 
-/* How It Works Area css start */
+/*--How It Works Area css start --*/
 
 .work-services {
   background: #ededed;
@@ -3847,21 +3832,43 @@ input[type="password"] {
 .single-work h5 {
   padding: 18px 0;
 }
-/* How It Works Area css end */
+/* -- How It Works Area css end  --*/
 
-/* featured jobs Area css start */
+/* --featured jobs Area css start -- */
+.featured-job-area .title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.list-unstyled{
-
+.list-unstyled li{
+  border: 1px solid #f3ecec;
+  padding: 25px 55px;
+  display: flex;
+  align-items: center;
 }
 .list-unstyled .media img{
   width: 170px;
   height: 160px;
-  border: 1px solid #000;
+  border: 1px solid #dcdcdc;
 }
-
-
-
+.list-unstyled .media-body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-unstyled .jobs-details p span{
+  color: var(--main-bg-color);
+}
+.list-unstyled .jobs-details h5{
+  
+}
+.list-unstyled .jobs-location{
+  display: flex;
+}
+.list-unstyled .jobs-location p{
+  padding-right: 50px;
+}
 /* featured jobs Area css end */
 
 /* Hire Freelancer Area css start */
@@ -3954,7 +3961,7 @@ input[type="password"] {
 .btn-profile {
   padding: 0 20px;
 }
-/* Hire Freelancer Area css end */
+/* --Hire Freelancer Area css end --*/
 
 /* ---News Letter page --- */
 
@@ -3987,11 +3994,11 @@ input[type="password"] {
   letter-spacing: 7px;
   width: 100%;
 }
-/* vivid section end */
+/* --vivid section end --*/
 
 /*--- Support Page start ---*/
 
-/* support form area start css */
+/* --support form area start css-- */
 
 .support nav>.nav.nav-tabs {
   border: none;
@@ -4016,7 +4023,7 @@ input[type="password"] {
   background: #000;
   color: #fff;
   border-radius: 0;
-  transition: background 0.20s linear;
+  transition: 0.20s linear;
 }
 .support-form label {
   padding-bottom: 8px;
@@ -4058,16 +4065,16 @@ input[type="password"] {
   padding-right: 150px;
 }
 
-/* support form area start end */
+/*--support form area start end--*/
 
-/* map area start css start */
+/* --map area start css start--*/
 
 .map .map-details {
   height: 300px;
 }
-/* map area start end */
+/*--map area start end --*/
 
-/* Support team area start css */
+/*-- Support team area start css --*/
 
 .team-support .media {
   padding: 12px;
@@ -4088,11 +4095,11 @@ input[type="password"] {
   margin-right: 13px;
   border-radius: 7px;
 }
-/* Support team area start end */
+/* --Support team area start end --*/
 
 /*--- Support Page end ---*/
 
-/* Login and registration page start */
+/* --Login and registration page start --*/
 #regTabsContent .tab-pane {
   background: #ededed;
   padding: 30px 60px 90px 60px;
@@ -4122,7 +4129,7 @@ input[type="password"] {
   margin-right: 8px;
 }
 .regTabs-heading .nav-tabs .nav-item.show .nav-link, .regTabs-heading  .nav-tabs .nav-link.active {
-  color: #000;
+  color: #fff;
   border-radius: 0;
   background: #000 !important;
   outline: 0;
@@ -4169,11 +4176,11 @@ input[type="password"] {
   background: #D44638;
   border:0;
 }
-/* Login and registration page end */
+/* --Login and registration page end --*/
 
 
-/* insurance page */
-/* insurance category start */
+/*-- insurance page --*/
+/*-- insurance category start --*/
 .single-ins-cat {
   padding: 20px;
   border: 1px solid #ededed;
@@ -4200,9 +4207,6 @@ input[type="password"] {
   font-weight: 600;
   text-transform: uppercase;
 }
-/*.single-ins-cat a:hover{
-  color: var(--main-bg-color);
-}*/
 
 .insurance-pra p a{
   color: var(--main-bg-color);
@@ -4224,9 +4228,9 @@ input[type="password"] {
   padding-right: 12px;
   color: var(--main-bg-color);
 }
-/* insurance category end */
+/* --nsurance category end-- */
 
-/* privacy policy area css start */
+/* --privacy policy area css start-- */
 
 #privacy-policy .privacy-details h3{
   font-weight: 600;
@@ -4250,9 +4254,9 @@ input[type="password"] {
   padding-right: 30px;
   padding-top: 30px;
 }
-/* privacy policy area css end */
-/* business area css start */
-/* receipt area start */
+/* --privacy policy area css end --*/
+/* --business area css start --*/
+/* --receipt area start-- */
 .single-receipt i{
   font-size: 32px;
   color: var(--main-bg-color);
@@ -4261,9 +4265,9 @@ input[type="password"] {
 .single-receipt h4{
   font-weight: 600;
 }
-/* receipt area end */
+/* --receipt area end --*/
 
-/* try-keyless-car area start */
+/* --try-keyless-car area start-- */
 .try-keyless-car{
   background: #ededed;
 }
@@ -4275,15 +4279,15 @@ input[type="password"] {
   color: var(--main-bg-color);
   font-size: 32px;
 }
-/* try-keyless-car area end */
+/* --try-keyless-car area end-- */
 .single-occasion h4{
   padding-bottom: 15px;
   font-weight: 700;
 }
-/* try-keyless-car area start */
-/* business area css end */
+/*-- try-keyless-car area start-- */
+/* --business area css end-- */
 
-/* Terms page css start */
+/* --Terms page css start-- */
 .terms-heading{
   border-bottom: 1px solid #ededed;
   margin-bottom: 10px 0;
@@ -4291,3 +4295,4 @@ input[type="password"] {
 #terms .terms-details p{
   padding: 5px 0;
 }
+/* --Terms page css End-- */

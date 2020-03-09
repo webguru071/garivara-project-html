@@ -27,6 +27,9 @@
     color: #5d6d7e;
     font-size: 18px;
   }
+  .call-text:before {
+    display: none;
+  }
 }
 
 /* Medium devices (tablets, less than 992px)*/
@@ -140,6 +143,12 @@
   }
   .keyless-car-pra {
     padding: 30px 0;
+  }
+  .list-unstyled .media-body {
+    display: block;
+  }
+  .jobs-button {
+    margin-top: 30px;
   }
 }
 /* Small devices (landscape phones, less than 768px)*/
@@ -264,6 +273,15 @@
   /* insurance page */
   .single-insurance-reapons {
     padding-top: 30px;
+  }
+  .list-unstyled .media img {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #dcdcdc;
+  }
+  .list-unstyled li {
+    padding: 25px 15px;
+    display: block;
   }
 }
 /* Extra small devices (portrait phones, less than 576px)*/
