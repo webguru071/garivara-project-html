@@ -2558,8 +2558,6 @@ border-radius: 50px;
 .heart-area span{
   padding-left: 10px;
 }
-
-
 .ride-details-body{
   position: relative;
   padding: 15px 25px;
@@ -2757,8 +2755,6 @@ position: relative;
 
 /* ----Ridesharing-inner Content  End----- */
 
-
-
 /* -- Car-Rentel Page Start-- */
 /*filter search*/
 .filter-search{
@@ -2766,7 +2762,9 @@ position: relative;
   padding: 15px 15px 0 0;
   overflow-y: scroll;
 }
-
+.booking-info{
+  width: 30%;
+}
 .filter-search .form-control {
   min-height: 47px;
 }
@@ -2797,6 +2795,11 @@ position: relative;
 }
 .list-boxs > ul > li {
   margin-bottom: 30px;
+}
+.map-list-area .map iframe{
+  width:100%;
+  height:1000px;
+  border: 0;
 }
 /* -- Car-Rentel Page End-- */
 
@@ -2887,7 +2890,6 @@ position: relative;
 }
 /* --  press page End -- */
 
-
 /* --  Car-offer page Start -- */
 .car-offer-img{
   text-align: center;
@@ -2896,9 +2898,6 @@ position: relative;
  width: 100%;
 }
 /* --  Car-offer page End -- */
-
-
-
 
 
 /* --Popular-Routs page Strat-- */
@@ -3068,9 +3067,6 @@ position: relative;
 .sare-post-arae ul li{
   padding-right: 13px;
 }
-.sare-post-arae ul li h6{
-   
-}
 .sare-post-arae ul li a{
   padding: 8px 15px;
   color: #fff;
@@ -3107,9 +3103,6 @@ position: relative;
 .commemt-heading ul{
   margin-left: 30px;
 }
-.commemt-heading ul li{
-
-}
 .commemt-heading ul li a{
   color: var(--main-bg-color)
 }
@@ -3135,6 +3128,17 @@ position: relative;
 
 
 
+.sitemap-wrapper ul li{
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #000;
+}
+.sitemap-wrapper ul li a{
+  color: #5f5f5f;
+}
+.sitemap-wrapper ul li a:hover{
+  color: var(--main-bg-color);
+}
 
 /* ----------------Alamin Vi------------------- */
 
@@ -3648,6 +3652,9 @@ input[type="password"] {
   height: 100%;
   padding-top: 60px;
 }
+.app-download .section-title{
+  margin-bottom: 30px;
+}
 .btn-width {
   width: 100%;
 }
@@ -3768,7 +3775,9 @@ input[type="password"] {
 }
 .search-sec {
   background: rgba(26, 70, 104, 0.9);
-  margin-top: -70px;
+    margin-top: -70px;
+    z-index: 9999;
+    position: relative;
 }
 .search-field .form-control {
   padding: 6px 32px;
@@ -4294,5 +4303,10 @@ input[type="password"] {
 }
 #terms .terms-details p{
   padding: 5px 0;
+}
+.map iframe{
+  width:100%;
+  height:300px;
+  border: 0;
 }
 /* --Terms page css End-- */

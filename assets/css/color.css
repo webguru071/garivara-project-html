@@ -82,8 +82,7 @@ a.btn-text-color:hover,
 .radius-slider,
 a.btn-theme,
 .paginations li a:hover,
-.single-box2:hover .box,
-.card-header {
+.single-box2:hover .box {
   background-color: var(--main-bg-color);
 }
 
